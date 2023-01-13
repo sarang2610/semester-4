@@ -7,7 +7,7 @@ class Button extends StatefulWidget {
   State<Button> createState() => _ButtonState();
 }
 
-void main() {
+void main() [
   runApp(
     MaterialApp(
       home: Button(),

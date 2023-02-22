@@ -63,11 +63,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/gifs/car_gif.gif
-    - assets/images/sedan.jpg
-    - assets/images/suv.jpg
-    - assets/images/hatchback.jpg
+    - assets/images/sedan.png
+    - assets/images/suv.png
+    - assets/images/hatchback.png
     - assets/images/hatchback_logo.jpg
-    - assets/images/i20.jpg
+    - assets/images/i20.png
     - assets/images/i10.jpg
     - assets/images/baleno.jpg
     - assets/images/swift.jpg
@@ -98,6 +98,7 @@ flutter:
     - assets/Images/renault_logo.jpg
     - assets/Images/tata_logo.png
     - assets/Images/first.jpg
+    - assets/Images/carimage.png
 
 
 

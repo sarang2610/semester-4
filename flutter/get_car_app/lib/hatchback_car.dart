@@ -127,7 +127,7 @@ class _hatchbackState extends State<hatchback> {
                   children: [
                     Expanded(
                       flex: 3,
-                      child: Image.asset("images/i20.jpg",
+                      child: Image.asset("images/i20.png",
                           fit: BoxFit.fitWidth, cacheWidth: 50),
                     ),
                     Expanded(

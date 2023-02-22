@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'all_car.dart';
+import 'carmenu.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({Key? key}) : super(key: key);
@@ -21,6 +22,8 @@ class _LoginpageState extends State<Loginpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        child: Form(
+        key: formKey,
         child: Column(
           children: [
             Expanded(
@@ -41,16 +44,18 @@ class _LoginpageState extends State<Loginpage> {
             ),
             Expanded(
                 flex: 2,
+
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 30, left: 25),
                       child: Container(
+                        margin: EdgeInsets.only(top: 20),
                         alignment: Alignment.topLeft,
                         child: Text(
-                          "Welcome Back!",
+                          "WELCOME",
                           style: GoogleFonts.openSans(
-                            fontSize: 25,
+                            fontSize: 35,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
@@ -59,17 +64,19 @@ class _LoginpageState extends State<Loginpage> {
                     Padding(
                       padding: const EdgeInsets.only(top: 20, left: 25),
                       child: Container(
+
                         alignment: Alignment.topLeft,
                         child: Text(
-                          "Use your credentials below and login to your account",
+                            " BACK !",
                           style: GoogleFonts.openSans(
-                              fontWeight: FontWeight.w600, fontSize: 12),
+                              fontWeight: FontWeight.w900, fontSize: 35),
                         ),
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: Container(
+                        margin: EdgeInsets.only(top: 20),
                         decoration: BoxDecoration(),
                         child: TextFormField(
                           controller: userNameController,
@@ -127,41 +134,52 @@ class _LoginpageState extends State<Loginpage> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Container(
-                        width: double.infinity,
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.black),
-                          color: Color.fromARGB(255, 74, 195, 191),
-                        ),
-                        child: TextButton(
-                          onPressed: () {
-                            if (
-                                userNameController.text == "ladvasarang" &&
-                                passwordController.text == "Sarang@1026") {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (builder) => all_car(),
+                  ],
+                ),
+                           ),
+                    Expanded(
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(right: 5),
+                              child: TextButton(
+                                onPressed: () {},
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                                  child: Text("sign up >>",
+                                      style: TextStyle(fontSize: 25)),
                                 ),
-                              );
-                            }
-                          },
-                          child: Text(
-                            "Login",
-                            style: GoogleFonts.openSans(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
-                        ),
+                          Expanded(
+                            child: Container(
+                              margin: EdgeInsets.only(left: 5,right: 30),
+                              child: ElevatedButton(
+                                onPressed: () {
+                                   {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (builder) => All_car(),
+                                      ),
+                                    );
+                                  }
+                                },
+                                child: Padding(
+                                  padding: const EdgeInsets.only(bottom: 20, top: 20),
+                                  child: Text("Log in", style: TextStyle(fontSize: 25)),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
 
                   ],
-                ))
-          ],
-        ),
+                ),
+      ),
       ),
     );
   }

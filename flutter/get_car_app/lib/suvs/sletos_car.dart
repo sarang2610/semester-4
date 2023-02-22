@@ -312,11 +312,6 @@ class _seltos_carState extends State<seltos_car> {
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
                         onPressed: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => all_car(),
-                            ),
-                          );
                         },
                         child: Text("BOOK NOW", style: TextStyle(fontSize: 20)),
                         style: ElevatedButton.styleFrom(primary: Colors.green),

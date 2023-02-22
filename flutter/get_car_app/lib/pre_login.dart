@@ -162,7 +162,7 @@ class _loginpageState extends State<loginpage> {
                               passwordController.text == "Sarang@1026") {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (builder) => all_car(),
+                                builder: (builder) => eAll_car(),
                               ),
                             );
                           }

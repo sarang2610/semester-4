@@ -24,15 +24,15 @@ class _suvState extends State<suv> {
               children: [
                 Container(
                   height: 40,
-                  child: Text(" WELCOME TO SUV CARS ",
-                      style: TextStyle(fontSize: 22 ,fontWeight: FontWeight.bold ,color: Colors.white),textAlign: TextAlign.center),
                   color: Colors.black,
                   width: double.infinity,
+                  child: Text(" WELCOME TO SUV CARS ",
+                      style: TextStyle(fontSize: 22 ,fontWeight: FontWeight.bold ,color: Colors.white),textAlign: TextAlign.center),
                 ),//space
-                Container(
+                SizedBox(
                   height: 300,
                   width: double.infinity,
-                  child: Container(
+                  child: SizedBox(
                     height: 300,
                     width: double.infinity,
                     child: Expanded(
@@ -45,7 +45,7 @@ class _suvState extends State<suv> {
                           ),
                           Expanded(
                             child: Container(
-                              color: Color.fromARGB(255, 236, 165, 85),
+                              color: const Color.fromARGB(255, 236, 165, 85),
                               child: Expanded(
                                 child: Row(
                                   children: [
@@ -56,20 +56,20 @@ class _suvState extends State<suv> {
                                             children: [
                                               Expanded(
                                                 child: Container(
-                                                  margin: EdgeInsets.only(right: 5),
+                                                  margin: const EdgeInsets.only(right: 5),
                                                   child: TextButton(
                                                     onPressed: () {
                                                       Navigator.of(context).pop();
                                                     },
-                                                    child: Text("<< back",style: TextStyle(fontSize: 30)),
+                                                    child: const Text("<< back",style: TextStyle(fontSize: 30)),
                                                   ),
                                                 ),
                                               ),
                                             ],
                                           )),
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(left: 40),
+                                    const Padding(
+                                      padding: EdgeInsets.only(left: 40),
                                       child: Expanded(
                                           child: Column(
                                             children: [
@@ -108,12 +108,12 @@ class _suvState extends State<suv> {
                 ),//logo
                 Container(
                   height: 30,
+                  color: const Color.fromARGB(255,211,206,173),
+                  width: double.infinity,
                   child: Text(" BEST SELLING SUVS",
                       style: TextStyle(fontSize: 20 ,fontWeight: FontWeight.bold ),textAlign: TextAlign.center),
-                  color: Color.fromARGB(255,211,206,173),
-                  width: double.infinity,
                 ),//space
-                Container(
+                SizedBox(
                   height: 300,
                   width: double.infinity,
                   child: Expanded(
@@ -126,12 +126,12 @@ class _suvState extends State<suv> {
                         ),
                         Expanded(
                           child: Container(
-                            color: Color.fromARGB(255, 64, 156, 231),
+                            color: const Color.fromARGB(255, 64, 156, 231),
                             child: Expanded(
                               child: Row(
                                 children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(left: 40),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 40),
                                     child: Expanded(
                                         child: Column(
                                           children: [
@@ -164,10 +164,10 @@ class _suvState extends State<suv> {
                                         onPressed: () {
                                           Navigator.of(context)
                                               .push(MaterialPageRoute(
-                                            builder: (context) => creta_car(),
+                                            builder: (context) => const creta_car(),
                                           ));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "more details =>",
                                           style: TextStyle(
                                               fontSize: 20, color: Colors.black),
@@ -184,7 +184,7 @@ class _suvState extends State<suv> {
                     ),
                   ),
                 ),//1st
-                Container(
+                SizedBox(
                   height: 300,
                   width: double.infinity,
                   child: Expanded(
@@ -197,12 +197,12 @@ class _suvState extends State<suv> {
                         ),
                         Expanded(
                           child: Container(
-                            color: Color.fromARGB(255, 64, 156, 231),
+                            color: const Color.fromARGB(255, 64, 156, 231),
                             child: Expanded(
                               child: Row(
                                 children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(left: 40),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 40),
                                     child: Expanded(
                                         child: Column(
                                           children: [
@@ -235,10 +235,10 @@ class _suvState extends State<suv> {
                                         onPressed: () {
                                           Navigator.of(context)
                                               .push(MaterialPageRoute(
-                                            builder: (context) => venue_car(),
+                                            builder: (context) => const venue_car(),
                                           ));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "more details =>",
                                           style: TextStyle(
                                               fontSize: 20, color: Colors.black),
@@ -255,7 +255,7 @@ class _suvState extends State<suv> {
                     ),
                   ),
                 ),//2nd
-                Container(
+                SizedBox(
                   height: 300,
                   width: double.infinity,
                   child: Expanded(
@@ -268,12 +268,12 @@ class _suvState extends State<suv> {
                         ),
                         Expanded(
                           child: Container(
-                            color: Color.fromARGB(255, 64, 156, 231),
+                            color: const Color.fromARGB(255, 64, 156, 231),
                             child: Expanded(
                               child: Row(
                                 children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(left: 40),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 40),
                                     child: Expanded(
                                         child: Column(
                                           children: [
@@ -306,10 +306,10 @@ class _suvState extends State<suv> {
                                         onPressed: () {
                                           Navigator.of(context)
                                               .push(MaterialPageRoute(
-                                            builder: (context) => brezza_car(),
+                                            builder: (context) => const brezza_car(),
                                           ));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "more details =>",
                                           style: TextStyle(
                                               fontSize: 20, color: Colors.black),
@@ -326,7 +326,7 @@ class _suvState extends State<suv> {
                     ),
                   ),
                 ),//3rd
-                Container(
+                SizedBox(
                   height: 300,
                   width: double.infinity,
                   child: Expanded(
@@ -339,12 +339,12 @@ class _suvState extends State<suv> {
                         ),
                         Expanded(
                           child: Container(
-                            color: Color.fromARGB(255, 64, 156, 231),
+                            color: const Color.fromARGB(255, 64, 156, 231),
                             child: Expanded(
                               child: Row(
                                 children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(left: 40),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 40),
                                     child: Expanded(
                                         child: Column(
                                           children: [
@@ -377,10 +377,10 @@ class _suvState extends State<suv> {
                                         onPressed: () {
                                           Navigator.of(context)
                                               .push(MaterialPageRoute(
-                                            builder: (context) => seltos_car(),
+                                            builder: (context) => const seltos_car(),
                                           ));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "more details =>",
                                           style: TextStyle(
                                               fontSize: 20, color: Colors.black),
@@ -397,7 +397,7 @@ class _suvState extends State<suv> {
                     ),
                   ),
                 ),//4th
-                Container(
+                SizedBox(
                   height: 300,
                   width: double.infinity,
                   child: Expanded(
@@ -410,12 +410,12 @@ class _suvState extends State<suv> {
                         ),
                         Expanded(
                           child: Container(
-                            color: Color.fromARGB(255, 64, 156, 231),
+                            color: const Color.fromARGB(255, 64, 156, 231),
                             child: Expanded(
                               child: Row(
                                 children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(left: 40),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 40),
                                     child: Expanded(
                                         child: Column(
                                           children: [
@@ -448,10 +448,10 @@ class _suvState extends State<suv> {
                                         onPressed: () {
                                           Navigator.of(context)
                                               .push(MaterialPageRoute(
-                                            builder: (context) => tiguan_car(),
+                                            builder: (context) => const tiguan_car(),
                                           ));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "more details =>",
                                           style: TextStyle(
                                               fontSize: 20, color: Colors.black),
@@ -468,7 +468,7 @@ class _suvState extends State<suv> {
                     ),
                   ),
                 ),//5th
-                Container(
+                SizedBox(
                   height: 300,
                   width: double.infinity,
                   child: Expanded(
@@ -481,12 +481,12 @@ class _suvState extends State<suv> {
                         ),
                         Expanded(
                           child: Container(
-                            color: Color.fromARGB(255, 64, 156, 231),
+                            color: const Color.fromARGB(255, 64, 156, 231),
                             child: Expanded(
                               child: Row(
                                 children: [
-                                  Padding(
-                                    padding: const EdgeInsets.only(left: 40),
+                                  const Padding(
+                                    padding: EdgeInsets.only(left: 40),
                                     child: Expanded(
                                         child: Column(
                                           children: [
@@ -519,10 +519,10 @@ class _suvState extends State<suv> {
                                         onPressed: () {
                                           Navigator.of(context)
                                               .push(MaterialPageRoute(
-                                            builder: (context) => xuv_car(),
+                                            builder: (context) => const xuv_car(),
                                           ));
                                         },
-                                        child: Text(
+                                        child: const Text(
                                           "more details =>",
                                           style: TextStyle(
                                               fontSize: 20, color: Colors.black),

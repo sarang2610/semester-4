@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'all_car.dart';
-import 'carmenu.dart';
+import 'package:matrimony/carmenu.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({Key? key}) : super(key: key);
@@ -31,7 +30,7 @@ class _LoginpageState extends State<Loginpage> {
               child: Stack(
                 children: [
                   Container(
-                    color: Color.fromARGB(255, 142, 200, 246),
+                    color: const Color.fromARGB(255, 142, 200, 246),
                   ),
                   Center(
                     child: Image.asset(
@@ -50,7 +49,7 @@ class _LoginpageState extends State<Loginpage> {
                     Padding(
                       padding: const EdgeInsets.only(top: 30, left: 25),
                       child: Container(
-                        margin: EdgeInsets.only(top: 20),
+                        margin: const EdgeInsets.only(top: 20),
                         alignment: Alignment.topLeft,
                         child: Text(
                           "WELCOME",
@@ -76,22 +75,23 @@ class _LoginpageState extends State<Loginpage> {
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: Container(
-                        margin: EdgeInsets.only(top: 20),
-                        decoration: BoxDecoration(),
+                        margin: const EdgeInsets.only(top: 20),
+                        decoration: const BoxDecoration(),
                         child: TextFormField(
                           controller: userNameController,
                           validator: (value) {
                             if (value != null && value.isEmpty) {
                               return "Enter User Name";
                             }
+                            return null;
                           },
                           decoration: InputDecoration(
-                              border: OutlineInputBorder(),
+                              border: const OutlineInputBorder(),
                               labelText: "Email address",
                               labelStyle:
                               GoogleFonts.openSans(fontWeight: FontWeight.bold),
-                              hintStyle: TextStyle(color: Colors.black),
-                              suffixIcon: Icon(Icons.check_circle_outline)),
+                              hintStyle: const TextStyle(color: Colors.black),
+                              suffixIcon: const Icon(Icons.check_circle_outline)),
                         ),
                       ),
                     ),
@@ -104,15 +104,16 @@ class _LoginpageState extends State<Loginpage> {
                             if (value != null && value.isEmpty) {
                               return "Enter Password";
                             }
+                            return null;
                           },
                           obscureText: pass,
                           obscuringCharacter: "*",
                           decoration: InputDecoration(
-                            border: OutlineInputBorder(),
+                            border: const OutlineInputBorder(),
                             labelText: "Password",
                             labelStyle:
                             GoogleFonts.openSans(fontWeight: FontWeight.bold),
-                            hintStyle: TextStyle(color: Colors.black),
+                            hintStyle: const TextStyle(color: Colors.black),
                             suffixIcon: IconButton(
                               onPressed: () {
                                 setState(() {
@@ -142,11 +143,11 @@ class _LoginpageState extends State<Loginpage> {
                         children: [
                           Expanded(
                             child: Container(
-                              margin: EdgeInsets.only(right: 5),
+                              margin: const EdgeInsets.only(right: 5),
                               child: TextButton(
                                 onPressed: () {},
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 20, bottom: 20),
+                                child: const Padding(
+                                  padding: EdgeInsets.only(top: 20, bottom: 20),
                                   child: Text("sign up >>",
                                       style: TextStyle(fontSize: 25)),
                                 ),
@@ -155,19 +156,19 @@ class _LoginpageState extends State<Loginpage> {
                           ),
                           Expanded(
                             child: Container(
-                              margin: EdgeInsets.only(left: 5,right: 30),
+                              margin: const EdgeInsets.only(left: 5,right: 30),
                               child: ElevatedButton(
                                 onPressed: () {
                                    {
                                     Navigator.of(context).push(
                                       MaterialPageRoute(
-                                        builder: (builder) => All_car(),
+                                        builder: (builder) => const All_car(),
                                       ),
                                     );
                                   }
                                 },
-                                child: Padding(
-                                  padding: const EdgeInsets.only(bottom: 20, top: 20),
+                                child: const Padding(
+                                  padding: EdgeInsets.only(bottom: 20, top: 20),
                                   child: Text("Log in", style: TextStyle(fontSize: 25)),
                                 ),
                               ),

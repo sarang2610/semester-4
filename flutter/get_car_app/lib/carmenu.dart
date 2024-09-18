@@ -19,25 +19,25 @@ class _All_carState extends State<All_car> {
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.only(top: 30, left: 10, right: 10),
+              margin: const EdgeInsets.only(top: 30, left: 10, right: 10),
               height: MediaQuery.of(context).size.height * 0.14,
               child: TextField(
                 keyboardType: TextInputType.text,
 
                 decoration: InputDecoration(
                     hintText: 'Your Preffered Location',
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(17),
                       ),
                     ),
-                    enabledBorder: OutlineInputBorder(
+                    enabledBorder: const OutlineInputBorder(
                       borderSide: (BorderSide(width: 1.0, color: Colors.blue)),
                       borderRadius: BorderRadius.all(
                         Radius.circular(18),
                       ),
                     ),
-                    focusedBorder: OutlineInputBorder(
+                    focusedBorder: const OutlineInputBorder(
                       borderSide: (BorderSide(width: 1.0, color: Colors.blue)),
                       borderRadius: BorderRadius.all(
                         Radius.circular(10),
@@ -45,11 +45,11 @@ class _All_carState extends State<All_car> {
                     ),
                     prefixIcon: IconButton(
                         onPressed: () {},
-                        icon: Icon(Icons.filter_list_rounded)),
+                        icon: const Icon(Icons.filter_list_rounded)),
                     suffixIcon: IconButton(
                         onPressed:() {
 
-                        }, icon: Icon(Icons.pin_drop_rounded))),
+                        }, icon: const Icon(Icons.pin_drop_rounded))),
               ),
             ),
             Padding(
@@ -58,7 +58,7 @@ class _All_carState extends State<All_car> {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (builder) => hatchback(),
+                      builder: (builder) => const hatchback(),
                     ),
                   );
                 },
@@ -70,11 +70,11 @@ class _All_carState extends State<All_car> {
                       color: Colors.lightBlueAccent),
                   child: Column(children: [
                     Container(
-                      padding: EdgeInsets.only(top: 20,right: 20),
+                      padding: const EdgeInsets.only(top: 20,right: 20),
                         alignment: Alignment.topRight,
-                        child: Icon(Icons.favorite,color: Colors.white,),
-                        height: 20),
-                    Container(
+                        height: 20,
+                        child: Icon(Icons.favorite,color: Colors.white,)),
+                    SizedBox(
                       height: 180,
                       width: double.infinity,
                       child: Image.asset("images/hatchback.png"),
@@ -90,8 +90,8 @@ class _All_carState extends State<All_car> {
                               child: Row(children: [
                                 Expanded(
                                     child: Container(
-                                  margin: EdgeInsets.only(left: 20),
-                                  child: Text("HATCHBACKS",
+                                  margin: const EdgeInsets.only(left: 20),
+                                  child: const Text("HATCHBACKS",
                                       style: TextStyle(
                                           fontSize: 25,
                                           fontWeight: FontWeight.bold,
@@ -110,8 +110,8 @@ class _All_carState extends State<All_car> {
                               child: Row(children: [
                                 Expanded(
                                     child: Container(
-                                  margin: EdgeInsets.only(left: 20),
-                                  child: Text("seats : 4",
+                                  margin: const EdgeInsets.only(left: 20),
+                                  child: const Text("seats : 4",
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold,
@@ -121,8 +121,8 @@ class _All_carState extends State<All_car> {
                                     flex: 2,
                                     child: Container(
                                       alignment: Alignment.center,
-                                      margin: EdgeInsets.only(left: 10),
-                                      child: Text("prize: under 10,00,000",
+                                      margin: const EdgeInsets.only(left: 10),
+                                      child: const Text("prize: under 10,00,000",
                                           style: TextStyle(
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,
@@ -144,7 +144,7 @@ class _All_carState extends State<All_car> {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (builder) => sedan(),
+                      builder: (builder) => const sedan(),
                     ),
                   );
                 },
@@ -156,11 +156,11 @@ class _All_carState extends State<All_car> {
                       color: Colors.lightBlueAccent),
                   child: Column(children: [
                     Container(
-                        padding: EdgeInsets.only(top: 20,right: 20),
+                        padding: const EdgeInsets.only(top: 20,right: 20),
                         alignment: Alignment.topRight,
-                        child: Icon(Icons.thumb_up_alt_outlined),
-                        height: 20),
-                    Container(
+                        height: 20,
+                        child: Icon(Icons.thumb_up_alt_outlined)),
+                    SizedBox(
                       height: 180,
                       width: double.infinity,
                       child: Image.asset("images/sedan.png"),
@@ -176,8 +176,8 @@ class _All_carState extends State<All_car> {
                               child: Row(children: [
                                 Expanded(
                                     child: Container(
-                                  margin: EdgeInsets.only(left: 20),
-                                  child: Text("SEDANS",
+                                  margin: const EdgeInsets.only(left: 20),
+                                  child: const Text("SEDANS",
                                       style: TextStyle(
                                           fontSize: 25,
                                           fontWeight: FontWeight.bold,
@@ -196,8 +196,8 @@ class _All_carState extends State<All_car> {
                               child: Row(children: [
                                 Expanded(
                                     child: Container(
-                                  margin: EdgeInsets.only(left: 20),
-                                  child: Text("seats : 5",
+                                  margin: const EdgeInsets.only(left: 20),
+                                  child: const Text("seats : 5",
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold,
@@ -207,8 +207,8 @@ class _All_carState extends State<All_car> {
                                     flex: 2,
                                     child: Container(
                                       alignment: Alignment.center,
-                                      margin: EdgeInsets.only(left: 10),
-                                      child: Text("prize: under 15,00,000",
+                                      margin: const EdgeInsets.only(left: 10),
+                                      child: const Text("prize: under 15,00,000",
                                           style: TextStyle(
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,
@@ -230,7 +230,7 @@ class _All_carState extends State<All_car> {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (builder) => suv(),
+                      builder: (builder) => const suv(),
                     ),
                   );
                 },
@@ -242,11 +242,11 @@ class _All_carState extends State<All_car> {
                       color: Colors.lightBlueAccent),
                   child: Column(children: [
                     Container(
-                        padding: EdgeInsets.only(top: 20,right: 20),
+                        padding: const EdgeInsets.only(top: 20,right: 20),
                         alignment: Alignment.topRight,
-                        child: Icon(Icons.thumb_up_alt_outlined),
-                        height: 20),
-                    Container(
+                        height: 20,
+                        child: Icon(Icons.thumb_up_alt_outlined)),
+                    SizedBox(
                       height: 180,
                       width: double.infinity,
                       child: Image.asset("images/suv.png"),
@@ -262,8 +262,8 @@ class _All_carState extends State<All_car> {
                               child: Row(children: [
                                 Expanded(
                                     child: Container(
-                                  margin: EdgeInsets.only(left: 20),
-                                  child: Text("SUVS",
+                                  margin: const EdgeInsets.only(left: 20),
+                                  child: const Text("SUVS",
                                       style: TextStyle(
                                           fontSize: 25,
                                           fontWeight: FontWeight.bold,
@@ -282,8 +282,8 @@ class _All_carState extends State<All_car> {
                               child: Row(children: [
                                 Expanded(
                                     child: Container(
-                                  margin: EdgeInsets.only(left: 20),
-                                  child: Text("seats : 6",
+                                  margin: const EdgeInsets.only(left: 20),
+                                  child: const Text("seats : 6",
                                       style: TextStyle(
                                           fontSize: 20,
                                           fontWeight: FontWeight.bold,
@@ -293,8 +293,8 @@ class _All_carState extends State<All_car> {
                                     flex: 2,
                                     child: Container(
                                       alignment: Alignment.center,
-                                      margin: EdgeInsets.only(left: 10),
-                                      child: Text("prize: under 20,00,000",
+                                      margin: const EdgeInsets.only(left: 10),
+                                      child: const Text("prize: under 20,00,000",
                                           style: TextStyle(
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,

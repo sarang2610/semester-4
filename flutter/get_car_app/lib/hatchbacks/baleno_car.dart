@@ -23,7 +23,7 @@ class _baleno_carState extends State<baleno_car> {
                     onPressed: () {
                       Navigator.of(context).pop();
                     },
-                    child: Text(
+                    child: const Text(
                       "<<",
                       style: TextStyle(fontSize: 60),
                     )),
@@ -40,6 +40,9 @@ class _baleno_carState extends State<baleno_car> {
         Expanded(
           flex: 2,
           child: Container(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: Colors.lightBlueAccent),
             child: Padding(
               padding: const EdgeInsets.all(18.0),
               child: Column(children: [
@@ -314,16 +317,13 @@ class _baleno_carState extends State<baleno_car> {
                         onPressed: () {
                         },
                         child: Text("BOOK NOW", style: TextStyle(fontSize: 20)),
-                        style: ElevatedButton.styleFrom(primary: Colors.green),
+                        style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
                       ),
                     ),
                   ),
                 ),
               ]),
             ),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                color: Colors.lightBlueAccent),
           ),
         ),
       ]),

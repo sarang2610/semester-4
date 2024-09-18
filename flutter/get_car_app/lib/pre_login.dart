@@ -26,7 +26,7 @@ class _loginpageState extends State<loginpage> {
               child: Stack(
                 children: [
                   Container(
-                    color: Color.fromARGB(255, 142, 200, 246),
+                    color: const Color.fromARGB(255, 142, 200, 246),
                   ),
                   Center(
                     child: Image.asset(
@@ -37,7 +37,7 @@ class _loginpageState extends State<loginpage> {
                 ],
               ),
             ),
-            Expanded(
+            const Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -51,7 +51,7 @@ class _loginpageState extends State<loginpage> {
                         ),
                       )),
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 50),
+                    padding: EdgeInsets.only(bottom: 50),
                     child: Expanded(
                       child: Text(
                         "Back !",
@@ -75,15 +75,16 @@ class _loginpageState extends State<loginpage> {
                       if (value != null && value.isEmpty) {
                         return "Enter mobile number";
                       }
+                      return null;
                     },
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         border: InputBorder.none,
                         suffixIcon: Icon(Icons.people),
                         hintText: "   Enter Mobile number"),
                   )),
             ),
             Container(
-              margin: EdgeInsets.only(top: 50),
+              margin: const EdgeInsets.only(top: 50),
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -94,8 +95,9 @@ class _loginpageState extends State<loginpage> {
                     if (value != null && value.isEmpty && value.length > 5) {
                       return "enter password";
                     }
+                    return null;
                   },
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                       border: InputBorder.none,
                       hintText: "   Enter Password"),
                   obscureText: true,
@@ -125,8 +127,8 @@ class _loginpageState extends State<loginpage> {
                   ),
                   Expanded(
                     child: Container(
-                      margin: EdgeInsets.only(top: 10),
-                      child: Text(
+                      margin: const EdgeInsets.only(top: 10),
+                      child: const Text(
                         "Show Password",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20),
@@ -141,11 +143,11 @@ class _loginpageState extends State<loginpage> {
                 children: [
                   Expanded(
                     child: Container(
-                      margin: EdgeInsets.only(right: 5),
+                      margin: const EdgeInsets.only(right: 5),
                       child: TextButton(
                         onPressed: () {},
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 20, bottom: 20),
+                        child: const Padding(
+                          padding: EdgeInsets.only(top: 20, bottom: 20),
                           child: Text("sign up >>",
                               style: TextStyle(fontSize: 25)),
                         ),
@@ -154,7 +156,7 @@ class _loginpageState extends State<loginpage> {
                   ),
                   Expanded(
                     child: Container(
-                      margin: EdgeInsets.only(left: 5),
+                      margin: const EdgeInsets.only(left: 5),
                       child: ElevatedButton(
                         onPressed: () {
                           if (formKey.currentState!.validate() &&
@@ -162,13 +164,13 @@ class _loginpageState extends State<loginpage> {
                               passwordController.text == "Sarang@1026") {
                             Navigator.of(context).push(
                               MaterialPageRoute(
-                                builder: (builder) => eAll_car(),
+                                builder: (builder) => const eAll_car(),
                               ),
                             );
                           }
                         },
-                        child: Padding(
-                          padding: const EdgeInsets.only(bottom: 20, top: 20),
+                        child: const Padding(
+                          padding: EdgeInsets.only(bottom: 20, top: 20),
                           child: Text("Log in", style: TextStyle(fontSize: 25)),
                         ),
                       ),

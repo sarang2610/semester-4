@@ -24,19 +24,19 @@ class _sedanState extends State<sedan> {
           children: [
             Container(
               height: 40,
+              color: Colors.black,
+              width: double.infinity,
               child: Text(" WELCOME TO SEDAN CARS ",
                   style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                   textAlign: TextAlign.center),
-              color: Colors.black,
-              width: double.infinity,
             ), //space
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
-              child: Container(
+              child: SizedBox(
                 height: 300,
                 width: double.infinity,
                 child: Expanded(
@@ -49,7 +49,7 @@ class _sedanState extends State<sedan> {
                       ),
                       Expanded(
                         child: Container(
-                          color: Color.fromARGB(255, 236, 165, 85),
+                          color: const Color.fromARGB(255, 236, 165, 85),
                           child: Expanded(
                             child: Row(
                               children: [
@@ -60,12 +60,12 @@ class _sedanState extends State<sedan> {
                                     children: [
                                       Expanded(
                                         child: Container(
-                                          margin: EdgeInsets.only(right: 5),
+                                          margin: const EdgeInsets.only(right: 5),
                                           child: TextButton(
                                             onPressed: () {
                                               Navigator.of(context).pop();
                                             },
-                                            child: Text("<< back",
+                                            child: const Text("<< back",
                                                 style: TextStyle(fontSize: 30)),
                                           ),
                                         ),
@@ -73,8 +73,8 @@ class _sedanState extends State<sedan> {
                                     ],
                                   )),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 40),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 40),
                                   child: Expanded(
                                       child: Column(
                                     children: [
@@ -113,13 +113,13 @@ class _sedanState extends State<sedan> {
             ), //logo
             Container(
               height: 30,
+              color: const Color.fromARGB(255, 211, 206, 173),
+              width: double.infinity,
               child: Text(" BEST SELLINGS SEDANS ",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center),
-              color: Color.fromARGB(255, 211, 206, 173),
-              width: double.infinity,
             ), //space
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -132,12 +132,12 @@ class _sedanState extends State<sedan> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -170,10 +170,10 @@ class _sedanState extends State<sedan> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => city_car(),
+                                        builder: (context) => const city_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -190,7 +190,7 @@ class _sedanState extends State<sedan> {
                 ),
               ),
             ), //1st
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -203,12 +203,12 @@ class _sedanState extends State<sedan> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -241,10 +241,10 @@ class _sedanState extends State<sedan> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => verna_car(),
+                                        builder: (context) => const verna_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -261,7 +261,7 @@ class _sedanState extends State<sedan> {
                 ),
               ),
             ), //2nd
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -274,12 +274,12 @@ class _sedanState extends State<sedan> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -312,10 +312,10 @@ class _sedanState extends State<sedan> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => ciaz_car(),
+                                        builder: (context) => const ciaz_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -332,7 +332,7 @@ class _sedanState extends State<sedan> {
                 ),
               ),
             ), //3rd
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -345,12 +345,12 @@ class _sedanState extends State<sedan> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -383,10 +383,10 @@ class _sedanState extends State<sedan> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => amaze_car(),
+                                        builder: (context) => const amaze_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -403,7 +403,7 @@ class _sedanState extends State<sedan> {
                 ),
               ),
             ), //4th
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -416,12 +416,12 @@ class _sedanState extends State<sedan> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -454,10 +454,10 @@ class _sedanState extends State<sedan> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => aura_car(),
+                                        builder: (context) => const aura_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -474,7 +474,7 @@ class _sedanState extends State<sedan> {
                 ),
               ),
             ), //5th
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -487,12 +487,12 @@ class _sedanState extends State<sedan> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -525,10 +525,10 @@ class _sedanState extends State<sedan> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => dzire_car(),
+                                        builder: (context) => const dzire_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),

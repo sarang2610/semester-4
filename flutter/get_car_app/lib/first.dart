@@ -17,11 +17,11 @@ class _firstpageState extends State<firstpage> {
     super.initState();
 
     Timer(
-      Duration(seconds: 5),
+      const Duration(seconds: 5),
       () {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
-            builder: (builder) => Loginpage(),
+            builder: (builder) => const Loginpage(),
           ),
         );
       },
@@ -34,12 +34,12 @@ class _firstpageState extends State<firstpage> {
         body: Stack(
       children: [
         Container(
-          margin: EdgeInsets.only(top: 300),
+          margin: const EdgeInsets.only(top: 300),
           height: 600,
           child: Image.asset("Images/first.jpg", fit: BoxFit.fitHeight),
         ),
         Container(
-          child: Text("WELCOME IN MOST USED AND TRUSTED CAR BUY APP ",
+          child: const Text("WELCOME IN MOST USED AND TRUSTED CAR BUY APP ",
               style: TextStyle(fontSize: 57, color: Colors.black)),
         )
       ],

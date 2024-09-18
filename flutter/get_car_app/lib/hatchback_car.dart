@@ -24,19 +24,19 @@ class _hatchbackState extends State<hatchback> {
           children: [
             Container(
               height: 40,
+              color: Colors.black,
+              width: double.infinity,
               child: Text(" WELCOME TO HATCHBACK CARS ",
                   style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                   textAlign: TextAlign.center),
-              color: Colors.black,
-              width: double.infinity,
             ), //space
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
-              child: Container(
+              child: SizedBox(
                 height: 300,
                 width: double.infinity,
                 child: Expanded(
@@ -49,7 +49,7 @@ class _hatchbackState extends State<hatchback> {
                       ),
                       Expanded(
                         child: Container(
-                          color: Color.fromARGB(255, 236, 165, 85),
+                          color: const Color.fromARGB(255, 236, 165, 85),
                           child: Expanded(
                             child: Row(
                               children: [
@@ -60,12 +60,12 @@ class _hatchbackState extends State<hatchback> {
                                     children: [
                                       Expanded(
                                         child: Container(
-                                          margin: EdgeInsets.only(right: 5),
+                                          margin: const EdgeInsets.only(right: 5),
                                           child: TextButton(
                                             onPressed: () {
                                               Navigator.of(context).pop();
                                             },
-                                            child: Text("<< back",
+                                            child: const Text("<< back",
                                                 style: TextStyle(fontSize: 30)),
                                           ),
                                         ),
@@ -73,8 +73,8 @@ class _hatchbackState extends State<hatchback> {
                                     ],
                                   )),
                                 ),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 40),
+                                const Padding(
+                                  padding: EdgeInsets.only(left: 40),
                                   child: Expanded(
                                       child: Column(
                                     children: [
@@ -113,13 +113,13 @@ class _hatchbackState extends State<hatchback> {
             ), //logo
             Container(
               height: 40,
+              color: const Color.fromARGB(255, 211, 206, 173),
+              width: double.infinity,
               child: Text(" BEST SELLING HATCHBACKS ",
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center),
-              color: Color.fromARGB(255, 211, 206, 173),
-              width: double.infinity,
             ), //space
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -132,12 +132,12 @@ class _hatchbackState extends State<hatchback> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -170,10 +170,10 @@ class _hatchbackState extends State<hatchback> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => i20_car(),
+                                        builder: (context) => const i20_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -190,7 +190,7 @@ class _hatchbackState extends State<hatchback> {
                 ),
               ),
             ), //1st
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -203,12 +203,12 @@ class _hatchbackState extends State<hatchback> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -241,10 +241,10 @@ class _hatchbackState extends State<hatchback> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => swift_car(),
+                                        builder: (context) => const swift_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -261,7 +261,7 @@ class _hatchbackState extends State<hatchback> {
                 ),
               ),
             ), //2nd
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -274,12 +274,12 @@ class _hatchbackState extends State<hatchback> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -312,10 +312,10 @@ class _hatchbackState extends State<hatchback> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => kwid_car(),
+                                        builder: (context) => const kwid_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -332,7 +332,7 @@ class _hatchbackState extends State<hatchback> {
                 ),
               ),
             ), //3rd
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -345,12 +345,12 @@ class _hatchbackState extends State<hatchback> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -383,10 +383,10 @@ class _hatchbackState extends State<hatchback> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => altroz_car(),
+                                        builder: (context) => const altroz_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -403,7 +403,7 @@ class _hatchbackState extends State<hatchback> {
                 ),
               ),
             ), //4th
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -416,12 +416,12 @@ class _hatchbackState extends State<hatchback> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -454,10 +454,10 @@ class _hatchbackState extends State<hatchback> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => i10_car(),
+                                        builder: (context) => const i10_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),
@@ -474,7 +474,7 @@ class _hatchbackState extends State<hatchback> {
                 ),
               ),
             ), //5th
-            Container(
+            SizedBox(
               height: 300,
               width: double.infinity,
               child: Expanded(
@@ -487,12 +487,12 @@ class _hatchbackState extends State<hatchback> {
                     ),
                     Expanded(
                       child: Container(
-                        color: Color.fromARGB(255, 64, 156, 231),
+                        color: const Color.fromARGB(255, 64, 156, 231),
                         child: Expanded(
                           child: Row(
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.only(left: 40),
+                              const Padding(
+                                padding: EdgeInsets.only(left: 40),
                                 child: Expanded(
                                     child: Column(
                                   children: [
@@ -525,10 +525,10 @@ class _hatchbackState extends State<hatchback> {
                                     onPressed: () {
                                       Navigator.of(context)
                                           .push(MaterialPageRoute(
-                                        builder: (context) => baleno_car(),
+                                        builder: (context) => const baleno_car(),
                                       ));
                                     },
-                                    child: Text(
+                                    child: const Text(
                                       "more details =>",
                                       style: TextStyle(
                                           fontSize: 20, color: Colors.black),

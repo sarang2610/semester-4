@@ -28,7 +28,7 @@ class _i20_carState extends State<i20_car> {
                           onPressed: () {
                             Navigator.of(context).pop();
                           },
-                          child: Icon(Icons.arrow_back,color: Colors.black),
+                          child: const Icon(Icons.arrow_back,color: Colors.black),
                     ),
                     ),
                     Expanded(
@@ -44,6 +44,11 @@ class _i20_carState extends State<i20_car> {
             Expanded(
               flex: 2,
               child: Container(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20),
+                      topRight: Radius.circular(20)),
+                  color: Colors.white,
+                ),
                 child: Padding(
                   padding: const EdgeInsets.all(18.0),
                   child: Column(children: [
@@ -491,17 +496,12 @@ class _i20_carState extends State<i20_car> {
                             child: Text("BOOK NOW",
                                 style: TextStyle(fontSize: 20)),
                             style:
-                            ElevatedButton.styleFrom(primary: Colors.green,),
+                            ElevatedButton.styleFrom(backgroundColor: Colors.green,),
                           ),
                         ),
                       ),
                     ),
                   ]),
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20)),
-                  color: Colors.white,
                 ),
               ),
             ),

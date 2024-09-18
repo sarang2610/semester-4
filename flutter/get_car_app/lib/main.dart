@@ -1,13 +1,9 @@
+
 import 'package:flutter/material.dart';
-import 'carmenu.dart';
-import 'hatchbacks/i20_car.dart';
-import 'loginpage.dart';
+import 'package:matrimony/carmenu.dart';
+import 'package:matrimony/loginpage.dart';
+
 import 'all_car.dart';
-import 'first.dart';
-import 'pre_login.dart';
-
-
-
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Loginpage(),
+      home: const All_car(),
     );
   }
 }

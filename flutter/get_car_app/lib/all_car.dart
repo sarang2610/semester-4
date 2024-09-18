@@ -19,9 +19,9 @@ class _eAll_carState extends State<eAll_car> {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 30, left: 10, right: 10),
+                  margin: const EdgeInsets.only(top: 30, left: 10, right: 10),
                   height: MediaQuery.of(context).size.height * 0.14,
-                  child: TextField(
+                  child: const TextField(
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
                       hintText: 'Your Preffered Location',
@@ -39,7 +39,7 @@ class _eAll_carState extends State<eAll_car> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (builder) => hatchback(),
+                          builder: (builder) => const hatchback(),
                         ),
                       );
                     },
@@ -50,7 +50,7 @@ class _eAll_carState extends State<eAll_car> {
                           borderRadius: BorderRadius.circular(30),
                           color: Colors.lightBlueAccent),
                       child: Column(children: [
-                        Container(
+                        SizedBox(
                           height: 180,
                           width: double.infinity,
                           child: Image.asset("images/hatchback.png"),
@@ -66,8 +66,8 @@ class _eAll_carState extends State<eAll_car> {
                                   child: Row(children: [
                                     Expanded(
                                         child: Container(
-                                          margin:EdgeInsets.only(left: 20),
-                                          child: Text("HATCHBACKS",
+                                          margin:const EdgeInsets.only(left: 20),
+                                          child: const Text("HATCHBACKS",
                                               style: TextStyle(
                                                   fontSize: 25,
                                                   fontWeight: FontWeight.bold,
@@ -93,8 +93,8 @@ class _eAll_carState extends State<eAll_car> {
                                   child: Row(children: [
                                     Expanded(
                                         child: Container(
-                                          margin:EdgeInsets.only(left: 20),
-                                          child: Text("seats : 4",
+                                          margin:const EdgeInsets.only(left: 20),
+                                          child: const Text("seats : 4",
                                               style: TextStyle(
                                                   fontSize:20,
                                                   fontWeight: FontWeight.bold,
@@ -104,8 +104,8 @@ class _eAll_carState extends State<eAll_car> {
                                         flex: 2,
                                         child: Container(
                                           alignment: Alignment.center,
-                                          margin: EdgeInsets.only(left: 10),
-                                          child: Text("prize: under 10,00,000",
+                                          margin: const EdgeInsets.only(left: 10),
+                                          child: const Text("prize: under 10,00,000",
                                               style: TextStyle(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.bold,
@@ -127,7 +127,7 @@ class _eAll_carState extends State<eAll_car> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (builder) => sedan(),
+                          builder: (builder) => const sedan(),
                         ),
                       );
                     },
@@ -138,7 +138,7 @@ class _eAll_carState extends State<eAll_car> {
                           borderRadius: BorderRadius.circular(30),
                           color: Colors.lightBlueAccent),
                       child: Column(children: [
-                        Container(
+                        SizedBox(
                           height: 180,
                           width: double.infinity,
                           child: Image.asset("images/sedan.png"),
@@ -154,8 +154,8 @@ class _eAll_carState extends State<eAll_car> {
                                   child: Row(children: [
                                     Expanded(
                                         child: Container(
-                                          margin:EdgeInsets.only(left: 20),
-                                          child: Text("SEDANS",
+                                          margin:const EdgeInsets.only(left: 20),
+                                          child: const Text("SEDANS",
                                               style: TextStyle(
                                                   fontSize: 25,
                                                   fontWeight: FontWeight.bold,
@@ -172,8 +172,8 @@ class _eAll_carState extends State<eAll_car> {
                                   child: Row(children: [
                                     Expanded(
                                         child: Container(
-                                          margin:EdgeInsets.only(left: 20),
-                                          child: Text("seats : 5",
+                                          margin:const EdgeInsets.only(left: 20),
+                                          child: const Text("seats : 5",
                                               style: TextStyle(
                                                   fontSize:20,
                                                   fontWeight: FontWeight.bold,
@@ -183,8 +183,8 @@ class _eAll_carState extends State<eAll_car> {
                                         flex: 2,
                                         child: Container(
                                           alignment: Alignment.center,
-                                          margin: EdgeInsets.only(left: 10),
-                                          child: Text("prize: under 15,00,000",
+                                          margin: const EdgeInsets.only(left: 10),
+                                          child: const Text("prize: under 15,00,000",
                                               style: TextStyle(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.bold,
@@ -206,7 +206,7 @@ class _eAll_carState extends State<eAll_car> {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (builder) => suv(),
+                          builder: (builder) => const suv(),
                         ),
                       );
                     },
@@ -217,7 +217,7 @@ class _eAll_carState extends State<eAll_car> {
                           borderRadius: BorderRadius.circular(30),
                           color: Colors.lightBlueAccent),
                       child: Column(children: [
-                        Container(
+                        SizedBox(
                           height: 180,
                           width: double.infinity,
                           child: Image.asset("images/suv.png"),
@@ -233,8 +233,8 @@ class _eAll_carState extends State<eAll_car> {
                                   child: Row(children: [
                                     Expanded(
                                         child: Container(
-                                          margin:EdgeInsets.only(left: 20),
-                                          child: Text("SUVS",
+                                          margin:const EdgeInsets.only(left: 20),
+                                          child: const Text("SUVS",
                                               style: TextStyle(
                                                   fontSize: 25,
                                                   fontWeight: FontWeight.bold,
@@ -251,8 +251,8 @@ class _eAll_carState extends State<eAll_car> {
                                   child: Row(children: [
                                     Expanded(
                                         child: Container(
-                                          margin:EdgeInsets.only(left: 20),
-                                          child: Text("seats : 6",
+                                          margin:const EdgeInsets.only(left: 20),
+                                          child: const Text("seats : 6",
                                               style: TextStyle(
                                                   fontSize:20,
                                                   fontWeight: FontWeight.bold,
@@ -262,8 +262,8 @@ class _eAll_carState extends State<eAll_car> {
                                         flex: 2,
                                         child: Container(
                                           alignment: Alignment.center,
-                                          margin: EdgeInsets.only(left: 10),
-                                          child: Text("prize: under 20,00,000",
+                                          margin: const EdgeInsets.only(left: 10),
+                                          child: const Text("prize: under 20,00,000",
                                               style: TextStyle(
                                                   fontSize: 18,
                                                   fontWeight: FontWeight.bold,
